@@ -1,0 +1,86 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Income Input -->
+    <EditText
+        android:id="@+id/incomeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your income"
+        android:inputType="numberDecimal"
+        android:textSize="34sp" />
+
+    <!-- Expense Inputs -->
+    <EditText
+        android:id="@+id/expenseFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Food Expense"
+        android:inputType="numberDecimal"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/expenseEntertainment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entertainment Expense"
+        android:inputType="numberDecimal"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/expenseBills"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bills Expense"
+        android:inputType="numberDecimal"
+        android:textSize="34sp" />
+
+    <!-- Calculate Button -->
+    <EditText
+        android:id="@+id/expenseMiscellaneous"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Miscellaneous Expense"
+        android:inputType="numberDecimal"
+        android:textSize="34sp" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Balance"/>
+
+    <!-- Output TextViews -->
+    <TextView
+        android:id="@+id/outputTotalIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Income: "
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/outputTotalExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Expenses: "
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/outputBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Balance: "
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/outputFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Financial Advice Here"
+        android:textStyle="bold"/>
+
+</LinearLayout>
